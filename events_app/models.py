@@ -32,7 +32,7 @@ class Event(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     title = db.Column(db.String)
     description = db.Column(db.String)
-    date_and_name = db.Column(db.DateTime)
+    date_and_time = db.Column(db.DateTime)
     guests = db.relationship('Guest', secondary='guest_event_table', back_populates='events_attending')
 
 
