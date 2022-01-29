@@ -94,7 +94,7 @@ def rsvp(event_id):
         db.session.add(new_guest)
         db.session.commit()
 
-    flash('You have successfully RSVP\'d! See you there!')
+    flash("You have successfully RSVP'd! See you there!")
     return redirect(url_for('main.event_detail', event_id=event_id))
 
 
